@@ -1,0 +1,44 @@
+/* Simple Selector */
+/* id selector */
+#para1 {
+    color: aqua;
+}
+/* class selector */
+.para2{
+    color:brown;
+}
+/* Universal Selector */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Grouping Selector */
+h1,h3{
+    color: blue;
+}
+/* Combinator Selector */
+/* Descendant Selector */
+div p{
+    background-color: yellow;
+}
+/* Child Selector */
+div > p {
+    background-color: tomato;
+}
+/* Adjacent Sibling Selector*/
+div + p{
+    background-color: blue;
+    color: brown;
+}
+/*General Sibling Selector */
+div ~ p {
+    color: pink;
+}
+
+/* Pseudo-Class Selector */
+div ~ p:hover{
+    color: chartreuse;
+}
+/* Pseudo-Element Selector */
+div ~ p::first-letter{
+    color: green;
+}
