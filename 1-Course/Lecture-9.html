@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="displayDate()">Show date:</button>
+        <p id="demo"></p>
+    </div>
+    <div>
+        <input type="text" id="inpTxt" onchange="upperCase()"/>
+    </div>
+    <div 
+    onmouseover="mOver(this)"
+    onmouseout="mOut(this)"
+    onmouseup="oUp(this)" 
+    onmousedown="oDown(this)"
+    style = "background-color: blue; color: black; height: 30px; width: 120px; padding: 40px;">
+    this is me!
+    </div>
+<script>
+    function displayDate(){
+        document.getElementById("demo").innerHTML = new Date();
+    }
+    function upperCase(){
+        const x = document.getElementById("inpTxt");
+        x.value = x.value.toUpperCase();
+    }
+    function mOver(obj) {
+        obj.innerHTML = "Thank you!";
+        obj.style.backgroundColor = "Black";
+        obj.style.color = "white"
+
+    }
+    function mOut(obj){
+        obj.innerHTML = "this is me!"
+        obj.style.backgroundColor = "blue";
+        obj.style.color = "black"
+    }
+    function oUp(obj){
+        obj.innerHTML = "Mouse is Up!"
+        obj.style.backgroundColor = "Black";
+        obj.style.color = "white"
+    }
+    function oDown(obj){
+        obj.innerHTML = "Mouse is Down!"
+        obj.style.backgroundColor = "blue";
+        obj.style.color = "black"
+    }
+
+</script>
+</body>
+</html>
